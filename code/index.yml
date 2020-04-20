@@ -1,4 +1,5 @@
-- hello-world.jsx
+- vue-threejs-movement.js
+- vue-threejs-orbit-controls.js
 - vue-at-gh119.js
 - vue-at-element-2.x-input.js
 - vue-at-element-1.x-input.js
@@ -12,3 +13,4 @@
 - react-editor-sizing.jsx
 - react-editor.jsx
 - use-model.jsx
+- hello-world.jsx

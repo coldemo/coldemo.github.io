@@ -20,10 +20,15 @@ let App = {
     <div class="container">
       <renderer :size="bg.size">
         <scene>
-          <camera :position="{ z: 5 }"></camera>
+          <orbit-controls :position="{ x: 1.5, y: 3.5, z: 3 }"
+              :rotation="{ x: 2, y: 0, z: 3 }">
+            <camera></camera>
+          </orbit-controls>
           <mesh name="Cube" :rotation="ui.rotation">
             <geometry type="Box" :args="[1, 1, 1]"></geometry>
-            <material type="MeshBasic" :color="0x00ff00"></material>
+            <material type="MeshBasic">
+              <texture :url="\`https://fritx.github.io/vue-threejs/static/textures/diamond.png\`"></texture>
+            </material>
           </mesh>
           <animation :fn="animate"></animation>
         </scene>
